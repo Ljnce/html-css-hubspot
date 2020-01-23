@@ -31,9 +31,6 @@
     border: 1px solid black;
     float:left;
     line-height: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 0px;
 }
 
 .divided{
@@ -172,29 +169,29 @@ a{
 }
 
 .customers-small{
-    width: 100%;
+    width: 30%;
     float: left;
-    height: 200px;
+    height: 300px;
     border: 1px solid black;
 }
 
 .customers-small-large{
-    width: 50%;
+    width: 70%;
     float: left;
-    height: 200px;
+    height: 300px;
     border: 1px solid black;
 }
 .customers{
-    width: 100%;
+    width: 50%;
     float: left;
-    height: 200px;
+    height: 300px;
     border: 1px solid black;
 }
 
 .customers-photo{
     width: 50%;
     float: left;
-    height: 200px;
+    height: 300px;
     border: 1px solid black;
 }
 
