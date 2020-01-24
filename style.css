@@ -28,11 +28,13 @@ body{
     background-color: #f5f8fa;
     width: 100%;
     height:100px;
-
-    /* left: 50%;
-    transform: translateX(-50%);
+    line-height: 100px;
     position: fixed;
-    z-index:10; */
+    top:0;
+    right:0;
+    bottom: 0;
+    left:0;
+    z-index:10;
 }
 
 .cta-container1{
@@ -55,8 +57,8 @@ body{
 }
 
 #Login-button{
-    background-color: red;
-    border: 1px solid red;
+    background-color: white;
+    border: 1px solid #ff7a59;
     border-radius: 5px;
     padding: 2px 10px;
     cursor: pointer;
@@ -65,8 +67,8 @@ body{
 }
 
 .btn-sml{
-    background-color: red;
-    border: 1px solid red;
+    background-color: #ff7a59;
+    border: 1px solid #ff7a59;
     border-radius: 5px;
     padding: 2px 10px;
 }
@@ -120,16 +122,16 @@ a{
     width: 80%;
     border: 1px solid black;
     float: left;
-    line-height: 50px;
 }
 
 .btn-mdm{
     background-color: red;
-    border: 1px solid red;
+    border: 1px solid white;
     border-radius: 5px;
     padding: 2px 10px;
     float: right;
     line-height: 50px;
+    background-color: white;
 }
 
 /* SEZIONE4 */
@@ -148,8 +150,8 @@ a{
 }
 
 .btn-lrg{
-    background-color: red;
-    border: 1px solid red;
+    background-color: #ff7a59;
+    border: 1px solid #ff7a59;
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
@@ -170,8 +172,8 @@ a{
 }
 
 .info-large img{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     object-fit: contain;
 }
 
@@ -185,6 +187,7 @@ a{
     height: 400px;
     border: 1px solid black;
     text-align: center;
+    background-color: white;
 }
 
 .info img{
@@ -301,6 +304,7 @@ hr{
     float: left;
     height: 300px;
     border: 1px solid black;
+    line-height: 30px;
 }
 
 .customers-photo{
