@@ -117,10 +117,15 @@ a{
     background-color: #425b76;
     height: 100px;
 }
+
 .learn{
     width: 80%;
     border: 1px solid black;
     float: left;
+}
+
+.learn strong{
+    color: white;
 }
 
 .btn-mdm{
@@ -225,18 +230,29 @@ hr{
 .clr-sea{
     background-color: #00adb4;
     height: 800px;
+    background-image: linear-gradient(to top right, #00abb7 0%, #00b6ac 50%, #00bca6 100%);
 }
 
 .table-top{
     width: 100%;
     float: left;
-    height: 100px;
+    height: 50px;
 }
 
 .table-large{
     width: 100%;
     float: left;
     height: 200px;
+    text-align: center;
+}
+
+.table-large h1{
+    color: white;
+    font-size: 40px;
+}
+
+.table-large p{
+    color: white;
 }
 
 .table{
@@ -275,26 +291,34 @@ hr{
     height: 600px;
 }
 
+.empty{
+    width: 5%;
+    height:300px;
+    float:left;
+}
+
 .customers-small{
-    width: 30%;
+    width: 20%;
     float: left;
     height: 300px;
-    border: 1px solid black;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 100px;
+    color: #657483
+}
+
+.customers-small h1, strong{
+    color:#33475b;
 }
 
 .customers-small-large{
     width: 70%;
-    float: left;
+    float: right;
     height: 300px;
-    border: 1px solid black;
 }
 
 .cards{
     height: 150px;
     width: 25%;
-    border: 1px solid black;
     float: left;
     text-align: center;
 }
@@ -310,7 +334,6 @@ hr{
     width: 50%;
     float: left;
     height: 300px;
-    border: 1px solid black;
     line-height: 30px;
 }
 
@@ -318,7 +341,6 @@ hr{
     width: 35%;
     float: right;
     height: 300px;
-    border: 1px solid black;
 }
 
 .customers-photo img{
@@ -337,7 +359,6 @@ hr{
     height: 400px;
     width: 25%;
     float: left;
-    border: 1px solid black;
 }
 
 .tools li{
@@ -385,4 +406,14 @@ i{
     padding:20px;
     padding-left:40px;
     color:#b6c2cf;
+}
+
+.Copyright{
+    width: 500px;
+    height:100px;
+    float:left;
+}
+
+.legal{
+    float: right;
 }
