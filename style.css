@@ -100,7 +100,7 @@ header{
     text-transform: uppercase;
 }
 
-ul, li{
+ul{
     display: inline-block;
     padding-right: 5px;
 }
@@ -140,10 +140,11 @@ a{
 }
 
 .jumbotrone{
-    width: 50%;
+    width: 15%;
     position: absolute;
     top:50%;
     transform: translateY(-50%);
+    line-height: 30px;
 }
 
 .btn-lrg{
@@ -192,8 +193,18 @@ a{
     object-fit: contain;
 }
 
-.info p, hr{
+.info p, hr, h6, li{
     color: #617080;
+}
+
+.info li{
+    list-style: none;
+}
+
+.info li:before {
+    content: '\1F95E';
+    margin-left: -20px;
+    margin-right: 10px;
 }
 
 hr{
@@ -259,6 +270,8 @@ hr{
     float: left;
     height: 300px;
     border: 1px solid black;
+    text-align: center;
+    padding-top: 50px;
 }
 
 .customers-small-large{
@@ -273,6 +286,14 @@ hr{
     width: 25%;
     border: 1px solid black;
     float: left;
+    text-align: center;
+}
+
+.cards img{
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    padding-bottom: 50px;
 }
 
 .customers{
@@ -283,8 +304,8 @@ hr{
 }
 
 .customers-photo{
-    width: 50%;
-    float: left;
+    width: 35%;
+    float: right;
     height: 300px;
     border: 1px solid black;
 }
