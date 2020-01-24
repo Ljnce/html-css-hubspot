@@ -187,9 +187,17 @@ a{
 }
 
 .info img{
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     object-fit: contain;
+}
+
+.info p, hr{
+    color: #617080;
+}
+
+hr{
+    margin: 10px 45px;
 }
 
 /* SEZIONE 6 */
@@ -219,6 +227,7 @@ a{
     text-align: center;
     font-size: 25px;
     padding-top: 25px;
+    color: white;
 }
 
 .riga1{
@@ -258,6 +267,14 @@ a{
     height: 300px;
     border: 1px solid black;
 }
+
+.cards{
+    height: 150px;
+    width: 25%;
+    border: 1px solid black;
+    float: left;
+}
+
 .customers{
     width: 50%;
     float: left;
