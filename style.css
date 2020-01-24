@@ -75,16 +75,18 @@ body{
     background-color: #ffffff;
     height: 100px;
     margin-top:100px;
+    /* line-height:94px; */
 }
 
 header{
     line-height: 50px;
     font-size: 15px;
-
 }
 
-#logo{
+#logo img{
     float: left;
+    height: 100px;
+    width: 100px;
 }
 
 #navbar{
@@ -119,12 +121,18 @@ a{
 
 .learn{
     width: 80%;
-    border: 1px solid black;
     float: left;
+    padding: 26px 0;
 }
 
 .learn strong{
     color: white;
+    font-size: 20px;
+}
+
+.learn p{
+    color: white;
+    font-size: 20px;
 }
 
 .btn-mdm{
@@ -166,11 +174,14 @@ a{
     height: 1000px;
 }
 
+.info-large .info-half1 .info-half2{
+    background-color: white;
+}
+
 .info-large{
     width: 100%;
     float: left;
     height: 300px;
-    border: 1px solid black;
     text-align: center;
 }
 
@@ -188,7 +199,6 @@ a{
     width: 40%;
     float: left;
     height: 300px;
-    border: 1px solid black;
     text-align: center;
     padding-top: 30px;
     padding-left:30px;
@@ -203,7 +213,6 @@ a{
     width: 60%;
     float: left;
     height: 300px;
-    border: 1px solid black;
     text-align: center;
     padding: 50px 0;
 }
@@ -227,6 +236,10 @@ h5{
     display: inline-block;
 }
 
+ul{
+    padding-top: 15px;
+}
+
 .info-half2 li{
     list-style: none;
     display: inline-block;
@@ -243,7 +256,6 @@ h5{
     width: 33.333%;
     float: left;
     height: 400px;
-    border: 1px solid black;
     text-align: center;
     background-color: white;
 }
