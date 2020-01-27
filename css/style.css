@@ -16,8 +16,6 @@ body{
 
 .container{
     width: 80%;
-    /* Height va tolto */
-    height: 100%;
     max-width: 1200px;
     margin:0 auto;
 }
@@ -199,9 +197,6 @@ a.btn-lrg{
     color: white;
 }
 
-.jumbotrone small{
-    margin-top: 20px;
-}
 
 .rainbow img{
     height: 400px;
@@ -547,6 +542,7 @@ border-style: hidden hidden hidden hidden;
     width: 400px;
     float: left;
     height: 300px;
+    line-height: 28px;
 }
 
 .customers h1, p, button, small{
