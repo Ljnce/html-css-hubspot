@@ -289,9 +289,9 @@ a.btn-lrg{
 .box-small{
     width: 40%;
     float:left;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 7px;
     background-color: #f5f8fa;
 }
 
@@ -314,9 +314,9 @@ a.btn-lrg{
 .box-large{
     width: 60%;
     float:left;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+    padding-top: 7px;
+    padding-right: 7px;
+    padding-bottom: 7px;
     background-color: #f5f8fa;
 }
 
@@ -372,7 +372,7 @@ ul{
 .box{
     width: 33.33%;
     float:left;
-    padding: 10px 10px;
+    padding: 7px 7px;
     background-color: #f5f8fa;
 }
 
@@ -438,7 +438,6 @@ hr{
 .table-top{
     width: 100%;
     float: left;
-    height: 50px;
 }
 
 .table-sx, .table-dx{
