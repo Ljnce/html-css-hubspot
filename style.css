@@ -16,8 +16,6 @@ body{
 
 .container{
     width: 80%;
-    /* Height va tolto */
-    height: 100%;
     max-width: 1200px;
     margin:0 auto;
 }
@@ -34,11 +32,19 @@ body{
     bottom: 0;
     left:0;
     z-index: 10;
+    border: 4px solid #e0e6ed;
+    border-style: hidden hidden solid hidden;
 }
 
 .cta-container1{
     width: 250px;
     float:left;
+}
+
+.cta-container1 img{
+    height:20px;
+    width: 20px;
+    cursor: pointer;
 }
 
 .divided{
@@ -47,27 +53,35 @@ body{
 }
 
 .cta-container2{
-    width: 300px;
+    width: 400px;
     float:right;
     text-align: right;
     padding-right: 10px;
+}
+
+.cta-container2 img{
+    height:20px;
+    width: 20px;
+    cursor: pointer;
 }
 
 #Login-button{
     background-color: white;
     border: 1px solid #ff7a59;
     border-radius: 5px;
-    padding: 2px 10px;
+    padding: 10px 10px;
     cursor: pointer;
     margin-left: 10px;
     margin-right: 10px;
+    color: #ff7a59;
 }
 
 .btn-sml{
     background-color: #ff7a59;
     border: 1px solid #ff7a59;
     border-radius: 5px;
-    padding: 2px 10px;
+    padding: 10px 10px;
+    color: white;
 }
 
 /* SEZIONE 2 */
@@ -90,16 +104,16 @@ header{
 }
 
 #navbar{
-    width: 600px;
-    border: 1px solid black;
+    width: 700px;
+    height: 100px;
     float:right;
+    padding-top: 10px;
 }
 
 #navbar li {
-    margin-left: 2px;
     list-style: none;
-    float: left;
-    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 30px;
 }
 
 ul{
@@ -119,6 +133,16 @@ a{
     height: 100px;
 }
 
+.clr-blue .container{
+    background-image: url(https://cdn2.hubspot.net/hubfs/53/assets/hubspot.com/_style-guide/sword-sprocket/circleLight1.svg);
+    animation: mymove 5s infinite;
+    background-position: top left;
+}
+
+@keyframes mymove {
+  50% {background-position: center;}
+}
+
 .learn{
     width: 80%;
     float: left;
@@ -135,22 +159,23 @@ a{
     font-size: 20px;
 }
 
-.btn-mdm{
-    background-color: red;
-    border: 1px solid white;
-    border-radius: 5px;
-    padding: 2px 10px;
-    float: right;
-    line-height: 50px;
+a.btn-smll{
     background-color: white;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px 10px;
+    color: #33475b;
+    float: right;
+    margin-top: 26px;
 }
 
-/* SEZIONE4 */
+/* SEZIONE 4A */
 .clr-pink{
     background-color: #fff2ee;
-    height: 700px;
+    height: 500px;
     position:relative;
 }
+
 
 .jumbotrone{
     width: 15%;
@@ -160,18 +185,84 @@ a{
     line-height: 30px;
 }
 
-.btn-lrg{
+.jumbotrone h1, p,{
+    padding-bottom: 20px;
+}
+
+a.btn-lrg{
     background-color: #ff7a59;
     border: 1px solid #ff7a59;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 25px 20px;
     cursor: pointer;
+    color: white;
 }
+
+
+.rainbow img{
+    height: 400px;
+    width: 800px;
+    float: right;
+    position: relative;
+}
+
+.immagini{
+    float: left;
+}
+
+.clr-pink .garage{
+    height: 300px;
+    width: 300px;
+    margin-top: 350px;
+    margin-left: 300px;
+    position: absolute;
+}
+
+.clr-pink .startup{
+    height: 400px;
+    width: 400px;
+    margin-top: 220px;
+    margin-left: 500px;
+    position: absolute;
+}
+
+.clr-pink .enterprise{
+    height: 500px;
+    width: 500px;
+    margin-top: 110px;
+    margin-left:770px;
+    position: absolute;
+
+}
+
+/* SEZIONE 4B */
+.clr-step1{
+    height: 50px;
+    width: 100%;
+    background-image: linear-gradient(to top right, #86e1d6 0%, #2ac9b4 50%, #00a38c 100%);
+}
+
+/* SEZIONE 4C */
+.clr-step2{
+    height: 50px;
+    width: 100%;
+    background-image: linear-gradient(to top right, #86e1d6 0%, #2ac9b4 50%, #00a38c 100%);
+}
+
+/* SEZIONE 4D */
+.clr-step3{
+    height: 100px;
+    width: 100%;
+    border:4px solid #33475c;
+    border-style: solid hidden solid hidden;
+    background-image: linear-gradient(to top right, #86e1d6 0%, #2ac9b4 50%, #00a38c 100%);
+}
+
 
 /* SEZIONE 5 */
 .clr-clst2{
     background-color: #f5f8fa;
-    height: 1000px;
+    height: 1050px;
 }
 
 .info-large .info-half1 .info-half2{
@@ -195,13 +286,24 @@ a{
     margin-left: 50px;
 }
 
-.info-half1{
+.box-small{
     width: 40%;
-    float: left;
-    height: 300px;
+    float:left;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 7px;
+    background-color: #f5f8fa;
+}
+
+.info-half1{
+    width: 100%;
+    height: 250px;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 10px;
     padding-left:30px;
+    background-color: white;
+    /* border: 10px solid #f5f8fa;
+    border-style: solid hidden solid solid; */
 }
 
 .info-half1 img{
@@ -209,17 +311,29 @@ a{
     width: 150px;
 }
 
-.info-half2{
+.box-large{
     width: 60%;
-    float: left;
-    height: 300px;
+    float:left;
+    padding-top: 7px;
+    padding-right: 7px;
+    padding-bottom: 7px;
+    background-color: #f5f8fa;
+}
+
+.info-half2{
+    width: 100%;
+    height: 250px;
     text-align: center;
-    padding: 50px 0;
+    padding: 20px 0;
+    background-color: white;
+    /* border: 10px solid #f5f8fa;
+    border-style: solid solid solid hidden; */
 }
 
 hr{
-    width:350px;
+    width:300px;
     display: inline-block;
+    color: #e0e6ed;
 }
 
 .info-half2 h3{
@@ -247,17 +361,27 @@ ul{
 }
 
 .info-half2 li:before {
-    content: '\1F95E';
-    margin-left: -20px;
-    margin-right: 10px;
+    content: "";
+    background-image: url(https://cdn2.hubspot.net/hubfs/53/assets/hubspot.com/partners/images/Orange_Checkmark.svg);
+    background-size: 20px 20px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.box{
+    width: 33.33%;
+    float:left;
+    padding: 7px 7px;
+    background-color: #f5f8fa;
 }
 
 .info{
-    width: 33.333%;
-    float: left;
-    height: 400px;
+    width: 100%;
+    height: 460px;
     text-align: center;
     background-color: white;
+    /* border: 10px solid #f5f8fa; */
 }
 
 .info img{
@@ -273,12 +397,17 @@ ul{
 .info li{
     list-style: none;
     margin-bottom: 2px;
+    vertical-align:baseline;
 }
 
 .info li:before {
-    content: '\1F95E';
-    margin-left: -20px;
-    margin-right: 10px;
+    content: "";
+    background-image: url(https://cdn2.hubspot.net/hubfs/53/assets/hubspot.com/partners/images/Orange_Checkmark.svg);
+    background-size: 20px 20px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: baseline;
 }
 
 hr{
@@ -289,24 +418,36 @@ hr{
     background-color: #ff7a59;
     border: 1px solid #ff7a59;
     border-radius: 5px;
-    padding: 2px 10px;
+    padding: 10px 10px;
+    color: white;
 }
 
+.empty2{
+    height:40px;
+    width: 100%;
+    float:left;
+
+}
 /* SEZIONE 6 */
 .clr-sea{
     background-color: #00adb4;
-    height: 800px;
+    height: 750px;
     background-image: linear-gradient(to top right, #00abb7 0%, #00b6ac 50%, #00bca6 100%);
 }
 
 .table-top{
     width: 100%;
     float: left;
-    height: 50px;
+}
+
+.table-sx, .table-dx{
+    width: 10%;
+    float: left;
+    height: 200px;
 }
 
 .table-large{
-    width: 100%;
+    width: 80%;
     float: left;
     height: 200px;
     text-align: center;
@@ -333,22 +474,40 @@ hr{
     color: white;
 }
 
-.riga1{
-    border-style: hidden hidden hidden solid;
+.table p, .table small{
+    color: white;
 }
 
-.riga2{
-     border-style: solid solid hidden hidden;
+.table.sx1, .table.central1{
+    border-style: hidden solid solid hidden;
 }
 
-.riga1:first-child{
-    border:10px solid black;
+.dx1{
+border-style: hidden hidden solid hidden;
+}
+
+.table.sx2, .table.central2{
+    border-style: hidden solid hidden hidden;
+}
+
+.dx2{
+border-style: hidden hidden hidden hidden;
+}
+
+.sx1 strong, .central1 strong, .dx1 strong{
+    font-size: 45px;
+    color: white;
+}
+
+.sx2 strong, .central2 strong, .dx2 strong{
+    font-size: 45px;
+    color: white;
 }
 
 .table-bottom{
     width: 100%;
     float: left;
-    height: 100px;
+    height: 50px;
 }
 
 /* SEZIONE7 */
@@ -369,11 +528,13 @@ hr{
     height: 300px;
     text-align: center;
     padding-top: 100px;
-    color: #657483
+    color: #657483;
 }
 
 .customers-small h1, strong{
     color:#33475b;
+    font-size: 13px;
+
 }
 
 .customers-small-large{
@@ -390,17 +551,31 @@ hr{
 }
 
 .cards img{
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     object-fit: contain;
-    padding-bottom: 50px;
+}
+
+.cards.top{
+    padding-top: 50px;
 }
 
 .customers{
-    width: 50%;
+    width: 400px;
     float: left;
     height: 300px;
-    line-height: 30px;
+    line-height: 28px;
+}
+
+.customers h1, p, button, small{
+    margin-bottom: 20px;
+    color: #33475b;
+    font-size: 10px;
+}
+
+.customers button{
+    color: white;
+    padding: 25px 25px;
 }
 
 .customers-photo{
@@ -417,7 +592,7 @@ hr{
 
 /* SEZIONE 8 */
 .clr-blue2{
-    background-color: #425b76;
+    background-color: #33475b;
     height: 600px;
 }
 
@@ -431,9 +606,9 @@ hr{
     list-style: none;
     color:#b6c2cf;
     text-align: center;
-    padding: 12px 20px;
+    padding: 12px 22px;
     float: left;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .tools strong{
@@ -448,6 +623,8 @@ hr{
     background-color: white;
     border: white;
     margin-left: 20px;
+    padding: 5px 5px;
+    color:#256d7b;
 }
 
 i{
@@ -462,7 +639,7 @@ i{
     width: 100%;
     float: left;
     text-align: center;
-    border: 1px solid #33475b;
+    border: 1px solid #425b76;
     border-style: hidden hidden solid hidden;
 }
 
@@ -472,18 +649,59 @@ i{
     padding:20px;
     padding-left:40px;
     color:#b6c2cf;
+    font-size: 24px;
 }
 
 .tools2 li:hover{
     color:#256d7b;
 }
 
+.tools2-bottom img{
+    cursor:pointer;
+}
+
 .Copyright{
     width: 500px;
     height:100px;
     float:left;
+    margin-top: 10px;
 }
 
-.legal{
+p.Copyright2020 small {
+    color: #a5b2c0;
+}
+
+.Legal{
     float: right;
+}
+
+.Legal li{
+    width: 160px;
+    height:90px;
+    color: #aab7c5;
+    display: inline-block;
+    list-style: none;
+    font-size: 24px;
+}
+
+/* Chat */
+.Chat {
+    height: 70px;
+    width: 70px;
+    margin: 1400px 2100px;
+    float: right;
+    text-align:center;
+    border: 1px solid #425b76;
+    border-radius: 50px;
+    background-color: #425b76;
+    position: fixed;
+    top:0;
+    right:0;
+    bottom: 0;
+    left:0;
+    z-index: 10;
+}
+
+.Chat img{
+    margin-top: 15px;
 }
